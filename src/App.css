@@ -1,0 +1,104 @@
+.todo-app {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.todo-app h1 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.todo-input:focus {
+  border-color: var(--accent);
+}
+
+.todo-add {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.todo-add:hover {
+  opacity: 0.85;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.todo-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.todo-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.todo-item.done .todo-label span {
+  text-decoration: line-through;
+  color: var(--text);
+  opacity: 0.6;
+}
+
+.todo-delete {
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.todo-delete:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.todo-count {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--text);
+}
